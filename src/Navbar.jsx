@@ -1,4 +1,5 @@
 import './navbar.css';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 let page;
 function determinePage () {
     if (window.location.pathname === '/') {
@@ -9,14 +10,15 @@ function determinePage () {
         console.log("failed to get page");
     }
 }
-function navBar() {
+export function NavBar() {
     determinePage();
     if (page === 'home') {
         return (
             <>
-            <div>
+            <div id='nav'>
                 <ul>
-                    <li><a href="/settings">Settings</a></li>
+                    <li id='settingsIcon'><a href="/settings">Settings</a></li>
+                    <li><a href="/">Home</a></li>
                     
                 </ul>
             </div>
@@ -25,9 +27,9 @@ function navBar() {
     } else if (page === 'settings') {
         return (
             <>
-            <div>
+            <div id='nav'>
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li id="homeIcon"><a href="/">Home</a></li>
                     <li><a href="/settings">Settings</a></li>
                 </ul>
             </div>
@@ -35,4 +37,3 @@ function navBar() {
         );
     }
 }
-
