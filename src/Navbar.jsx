@@ -13,21 +13,25 @@ function navBar() {
     determinePage();
     if (page === 'home') {
         return (
-            <div className="navBar">
+            <>
+            <div>
                 <ul>
                     <li><a href="/settings">Settings</a></li>
                     
                 </ul>
             </div>
+            </>
         );
     } else if (page === 'settings') {
         return (
-            <div className="navBar">
+            <>
+            <div>
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/settings">Settings</a></li>
                 </ul>
             </div>
+            </>
         );
     }
 }

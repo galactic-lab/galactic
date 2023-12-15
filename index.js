@@ -2,13 +2,13 @@ import { createServer } from "node:http";
 import { createBareServer } from "@tomphttp/bare-server-node";
 import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
 import express from "express";
-
+console.log(uvPath)
 const bare = createBareServer("/bare/");
 const app = express();
 const port = 8080;
 
 app.use(express.static('dist'));
-app.use("/uv/", express.static(uvPath));
+app.use("/help/", express.static(uvPath));
 
 const server = createServer();
 
