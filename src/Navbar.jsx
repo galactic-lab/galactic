@@ -1,4 +1,4 @@
-import './navbar.css';
+import './index.css';
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 let page;
 function determinePage () {
@@ -16,9 +16,10 @@ export function NavBar() {
         return (
             <>
             <div id='nav'>
+                <div className="fixed h-[130px] mx-20 bg-[#181818] rounded-[20px] opacity-100" />
                 <ul>
-                    <li id='settingsIcon'><a href="/settings">Settings</a></li>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/settings">Settings</a></li>
+                    <li><a href="">open about:blank</a></li>
                     
                 </ul>
             </div>
@@ -30,7 +31,7 @@ export function NavBar() {
             <div id='nav'>
                 <ul>
                     <li id="homeIcon"><a href="/">Home</a></li>
-                    <li><a href="/settings">Settings</a></li>
+                    <li><a href="">open about:blank</a></li>
                 </ul>
             </div>
             </>
