@@ -16,10 +16,10 @@ export function NavBar() {
     if (page === 'home') {
         return (
             <>
-                <nav className="Rectangle2 fixed top-5 left-5 right-5 h-32 opacity-75 bg-neutral-900 rounded-2xl flex items-center px-57" />
-                <ul className="flex justify-around w-full items-center">
-                    <li><a href="/settings"><FontAwesomeIcon icon={faGear} style={{color: "#ffffff",}}className="fixed w-[35px] h-[38px] left-57"/></a></li>
-                    <li><a href="#"><FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{color: "#ffffff",}} /></a></li>
+                <nav className="Rectangle2 fixed top-5 left-5 right-5 h-32 opacity-75 bg-neutral-900 rounded-2xl flex items-center pr-14 pl-14" />
+                <ul className="flex justify-around w-full items-center list-none">
+                    <li><a href="/settings"><FontAwesomeIcon icon={faGear} style={{color: "#ffffff",}} className="fixed w-[35px] h-[38px]"/></a></li>
+                    <li><a href="#"><FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{color: "#ffffff",}} className="fixed w-[35px] h-[38px] relative -top-21 -left-35" /></a></li>
                     
                 </ul>
             </>

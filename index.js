@@ -2,7 +2,6 @@ import { createServer } from "node:http";
 import { createBareServer } from "@tomphttp/bare-server-node";
 import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
 import express from "express";
-console.log(uvPath)
 const bare = createBareServer("/bare/");
 const app = express();
 const port = 8080;
@@ -31,3 +30,4 @@ server.on("upgrade", (req, socket, head) => {
 server.listen({
     port: port,
 });
+console.log(`Galactic running on port ${port}`);
