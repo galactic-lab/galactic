@@ -15,14 +15,12 @@ export function NavBar() {
     if (page === 'home') {
         return (
             <>
-            <div id='nav'>
-                <div className="fixed h-[130px] mx-20 bg-[#181818] rounded-[20px] opacity-100" />
+                <div className="Rectangle2 fixed top-5 left-5 right-5 h-32 opacity-75 bg-neutral-900 rounded-2xl" />
                 <ul>
                     <li><a href="/settings">Settings</a></li>
                     <li><a href="">open about:blank</a></li>
                     
                 </ul>
-            </div>
             </>
         );
     } else if (page === 'settings') {
