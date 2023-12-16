@@ -5,7 +5,11 @@ export default {
         './**/*.html'
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                'lexend': ['Lexend']
+        }
     },
     plugins: [],
+    }
 }
