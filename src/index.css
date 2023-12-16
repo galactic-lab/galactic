@@ -6,3 +6,6 @@
     all: unset;
   }
 }
+body {
+  background-color: #101010;
+}
