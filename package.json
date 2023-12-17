@@ -9,7 +9,7 @@
     "start": "node index.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "dev-build": "rm -rf dist && vite build && node index.js"
+    "dev-build": "rm -rf dist && vite build && cp register.js dist/register.js && node index.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
