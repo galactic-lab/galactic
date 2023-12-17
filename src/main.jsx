@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { NavBar } from './Navbar.jsx'
 import App from './App.jsx'
 //import Settings from './Settings.jsx'
-import Proxy from './Proxy.jsx'
+//import Proxy from './Proxy.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 

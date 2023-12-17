@@ -1,7 +1,7 @@
 import './index.css';
 import { useEffect } from 'react'
 import { useNavigate } from "react-router-dom"
-import {xorEncode} from "./tools.js";
+import {xorEncode} from "/public/tools.js";
 import { useState } from "react";
 
 function ProcessRequest(event) {
