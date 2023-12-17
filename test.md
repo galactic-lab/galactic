@@ -1,3 +1,5 @@
+# Galactic
+
 <h3 align="center">Galactic is a in development proxy based on Titani</h3>
 
 
