@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently 'vite' 'node index.js'",
-    "build": "vite build",
+    "build": "rm -rf dist && vite build && cp register.js dist/register.js && cp src/tools.js dist/tools.js",
     "start": "node index.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "dev-build": "rm -rf dist && vite build && cp register.js dist/register.js && node index.js"
+    "dev-build": "rm -rf dist && vite build && cp register.js dist/register.js && cp src/tools.js dist/tools.js && node index.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
