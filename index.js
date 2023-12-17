@@ -4,7 +4,7 @@ import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
 import express from "express";
 const bare = createBareServer("/bare/");
 const app = express();
-const port = 8080;
+const port = 2020;
 
 app.use(express.static('dist'));
 app.use("/service/", express.static(uvPath));
