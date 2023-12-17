@@ -7,7 +7,7 @@ const app = express();
 const port = 8080;
 
 app.use(express.static('dist'));
-app.use("/help/", express.static(uvPath));
+app.use("/service/", express.static(uvPath));
 
 const server = createServer();
 
