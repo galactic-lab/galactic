@@ -8,7 +8,8 @@ function App() {
     const navigate = useNavigate()
     const [input, setInput] = useState('')
 
-    function handleSearch() {
+    function handleSearch(e) {
+        e.preventDefault()
         const address = document.getElementById('address').value
         const encodedSrc = encodeXor(address)
         navigate(`view?src=${encodedSrc}`)

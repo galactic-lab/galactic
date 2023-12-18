@@ -7,8 +7,10 @@ function determinePage () {
         page = 'home';
     } else if (window.location.pathname === '/settings') {
         page = 'settings';
+    } else if (window.location.pathname === '/view') {
+        page = 'view'
     } else {
-        console.log("failed to get page");
+        console.error('Failed to get page')
     }
 }
 export function NavBar() {
@@ -46,5 +48,13 @@ export function NavBar() {
                 </div>
             </>
         );
+    }
+    else {
+        return (
+            <>
+                <head>
+                </head>
+            </>
+        )
     }
 }

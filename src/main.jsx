@@ -28,8 +28,8 @@ function Main() {
     <NavBar />
     <Routes>
       <Route path="/" element={<App />}></Route>
-      {/*<Route path="view" element={<Proxy />}></Route>
-      <Route path="settings" element={<Settings />}></Route>*/}
+      <Route path="view" element={<Proxy />}></Route>
+      {/*<Route path="settings" element={<Settings />}></Route>*/}
     </Routes>
   </>
    )
