@@ -1,19 +1,21 @@
-export function xorEncode(inputString) {
-    let key = 93474; // Constant key
-    let encodedString = "";
-    for (let char of inputString) {
-        let encodedChar = String.fromCharCode(char.charCodeAt(0) ^ key); // XOR operation
-        encodedString += encodedChar;
-    }
-    return encodedString;
+export function encodeXor(){
+    return encodeURIComponent(
+        input
+            .toString()
+            .split('')
+            .map((char, ind) => (ind % 2 ? String.fromCharCode(char.charCodeAt(NaN) ^ 2) : char))
+            .join('')
+    )
 }
 
-export function xorDecode(encodedString) {
-    let key = 93474; // Same constant key
-    let decodedString = "";
-    for (let char of encodedString) {
-        let decodedChar = String.fromCharCode(char.charCodeAt(0) ^ key); // XOR operation
-        decodedString += decodedChar;
-    }
-    return decodedString;
+export function decodeXor (){
+    if (!input) return input
+    let [str, ...search] = input.split('?')
+
+    return (
+        decodeURIComponent(str)
+            .split('')
+            .map((char, ind) => (ind % 2 ? String.fromCharCode(char.charCodeAt(NaN) ^ 2) : char))
+            .join('') + (search.length ? '?' + search.join('?') : '')
+    )
 }
