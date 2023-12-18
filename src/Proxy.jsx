@@ -1,33 +1,21 @@
-import { decodeXor, encodeXor, formatSearch } from '/public/tools.js'
-import { useNavigate } from 'react-router-dom/dist'
-import Frame from '../components/Frame'
-import { useEffect, useState, useRef } from 'react'
-function Proxy() {
-    const [urlInput, setUrlInput] = useState('')
-    const params = useQuery()
-    const navigate = useNavigate()
-    const [hidden, setHidden] = useState(false)
-    const frameRef = useRef<HTMLIFrameElement>(null)
-    const proxy = store('proxy') || 'uv'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { decodeXor } from '/public/tools.js';
 
-    const src = params.get('src') || ''
 
-    useEffect(() => {
-        if (!src) navigate('/')
-    })
+export default function Proxy ()
+{
+    function IframeWithDecodedSource({ encodedSrc }) {
+  const decodedSrc = decodeXor(encodedSrc);
 
-    function handleLoad() {
-        // console.log(frameRef.current.contentWindow)
-        if (`__${proxy}$location` in frameRef.current.contentWindow) {
-            const url = new URL(frameRef.current.contentWindow[`__${proxy}$location`].href)
-            setUrlInput(url.toString())
-            } else {console.error('no location')}
-        return (
-            <>
-                <Frame src={formatSearch(decodeXor(src))} handleLoad={handleLoad} frameRef={frameRef} />
+  return <iframe src={decodedSrc} />;
+}
 
-            </>
-        )
-        }}
+const encodedSrc = 'encoded_source_url';
 
-export default Proxy
+    ReactDOM.createRoot(document.getElementById('root')).render(
+    <>
+        <IframeWithDecodedSource encodedSrc={encodedSrc} />
+
+    </>
+)}
