@@ -7,7 +7,7 @@ const app = express();
 const port = 2020;
 
 app.use(express.static('dist'));
-app.use("/service/", express.static(uvPath));
+app.use("/uv/", express.static(uvPath));
 
 const server = createServer();
 

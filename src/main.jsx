@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <BrowserRouter>
       <Routes>
       <Route path="/" element={<App />}></Route>
-          <Route path="service" element={<Proxy />}></Route>
+          {/*<Route path="service" element={<Proxy />}></Route>*/}
         {/*<Route path="settings" element={<Settings />}></Route>*/}
   </Routes>
   </BrowserRouter>
