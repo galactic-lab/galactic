@@ -33,6 +33,9 @@ function App() {
 
   return (
       <>
+        <script src="/uv/uv.handler.js"></script>
+  <script src="/uv/uv.bundle.js"></script>
+  <script src="/uv/uv.config.js"></script>
       <div className="mt-8 sm:mt-12 lg:mt-16 relative flex justify-center">
         <div id="Glow" className="shadow-glow w-full max-w-xs sm:max-w-sm lg:max-w-md"/>
           <form id="urlForm" onSubmit={ProcessRequest}>
