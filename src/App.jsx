@@ -1,7 +1,7 @@
 import './index.css';
 import { useEffect } from 'react'
 import { useNavigate } from "react-router-dom"
-import {xorEncode} from "/public/tools.js";
+import {encodeXor} from "/public/tools.js";
 import { useState } from "react";
 
 function ProcessRequest(event) {
@@ -9,7 +9,7 @@ function ProcessRequest(event) {
     // Your request processing logic here
     const [input] = useState('');
     const navigate = useNavigate();
-    const encodedSrc = xorEncode(input);
+    const encodedSrc = encodeXor(input);
     navigate(`service?src=${encodedSrc}`);
 
 
