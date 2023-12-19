@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import { decodeXor } from '/public/tools.js';
 
@@ -15,7 +14,7 @@ const encodedSrc = 'encoded_source_url';
 
     ReactDOM.createRoot(document.getElementById('root')).render(
     <>
-        <IframeWithDecodedSource encodedSrc={encodedSrc} />
+        <IframeWithDecodedSource src={decodedSrc} />
 
     </>
 )}
