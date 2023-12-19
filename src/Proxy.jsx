@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom';
 import { decodeXor } from '/public/tools.js';
 
 
-export default function Proxy ()
+function Proccy()
 {
     function IframeWithDecodedSource({ encodedSrc }) {
     const decodedSrc = decodeXor(encodedSrc);
@@ -18,3 +18,4 @@ const encodedSrc = 'encoded_source_url';
 
     </>
 )}
+export default Proccy

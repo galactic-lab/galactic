@@ -1,19 +1,18 @@
 import './index.css';
 import { useNavigate } from "react-router-dom"
 import {encodeXor} from "/public/tools.js";
-import Proxy from './Proxy.jsx'
+import Proccy from './Proxy.jsx'
 
 function App() {
+    const navigate = useNavigate()
 
     function handleSearch(e) {
         e.preventDefault()
         const address = document.getElementById('address').value
         const encodedSrc = encodeXor(address)
-        const navigate = useNavigate()
-        navigate('/proxy?url=' + encodedSrc)
-        Proxy(encodedSrc)
+        navigate('/view?src=' + encodedSrc)
+        Proccy(encodedSrc)
     }
-
   return (
       <>
       <div className="mt-8 sm:mt-12 lg:mt-16 relative flex justify-center">
