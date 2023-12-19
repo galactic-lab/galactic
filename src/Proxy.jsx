@@ -1,12 +1,14 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import { decodeXor } from '/public/tools.js';
+import {useNavigate} from "react-router-dom";
 
 
 export default function Proxy ()
 {
+    const navigate = useNavigate();
+
     function IframeWithDecodedSource({ encodedSrc }) {
-  const decodedSrc = decodeXor(encodedSrc);
+        const decodedSrc = decodeXor(encodedSrc);
 
   return <iframe src={decodedSrc} />;
 }
