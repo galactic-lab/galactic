@@ -1,17 +1,17 @@
 import './index.css';
-import { useNavigate } from "react-router-dom"
 import {encodeXor} from "/public/tools.js";
 import NavBar from './navbar.jsx';
+import Proccy from "./Proxy.jsx";
+
 
 
 function App() {
-    const navigate = useNavigate()
 
     function handleSearch(e) {
         e.preventDefault()
         const address = document.getElementById('address').value
-        const encodedSrc = encodeXor(address)
-        navigate('/view?src=' + encodedSrc)
+        let  encodedSrc = encodeXor(address)
+        Proccy(encodedSrc)
     }
   return (
       <>
