@@ -1,17 +1,16 @@
 import './index.css';
 import { useNavigate } from "react-router-dom"
 import {encodeXor} from "/public/tools.js";
-import { useState } from "react";
 import Proxy from './Proxy.jsx'
 
 function App() {
-    const navigate = useNavigate()
-    const [input, setInput] = useState('')
 
     function handleSearch(e) {
         e.preventDefault()
         const address = document.getElementById('address').value
         const encodedSrc = encodeXor(address)
+        const navigate = useNavigate()
+        navigate('/proxy?url=' + encodedSrc)
         Proxy(encodedSrc)
     }
 
