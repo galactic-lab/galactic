@@ -37,7 +37,6 @@ function Main() {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
-    <NavBar />
     <BrowserRouter>
     <Main />
     </BrowserRouter>
