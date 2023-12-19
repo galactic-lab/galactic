@@ -1,11 +1,11 @@
 //import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { NavBar } from './navbar.jsx'
 import App from './App.jsx'
 //import Settings from './Settings.jsx'
 import Proccy from './Proxy.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import {useEffect} from "react";
+import NavBar from './navbar.jsx'
 
 function Main() {
     useEffect(() => {
@@ -25,7 +25,6 @@ function Main() {
     });
    return (
        <>
-    <NavBar />
     <Routes>
       <Route path="/" element={<App />}></Route>
       <Route path="/view" element={<Proccy />}></Route>
@@ -38,6 +37,7 @@ function Main() {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
+    <NavBar />
     <BrowserRouter>
     <Main />
     </BrowserRouter>

@@ -13,7 +13,7 @@ function determinePage () {
         console.error('Failed to get page')
     }
 }
-export function NavBar() {
+export default function NavBar() {
     determinePage();
     if (page === 'home') {
         return (
@@ -52,8 +52,7 @@ export function NavBar() {
     else {
         return (
             <>
-                <head>
-                </head>
+            <head></head>  
             </>
         )
     }

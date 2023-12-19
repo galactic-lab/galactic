@@ -1,7 +1,7 @@
 import './index.css';
 import { useNavigate } from "react-router-dom"
 import {encodeXor} from "/public/tools.js";
-import Proccy from './Proxy.jsx'
+
 
 function App() {
     const navigate = useNavigate()
@@ -11,7 +11,6 @@ function App() {
         const address = document.getElementById('address').value
         const encodedSrc = encodeXor(address)
         navigate('/view?src=' + encodedSrc)
-        Proccy(encodedSrc)
     }
   return (
       <>
