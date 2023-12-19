@@ -9,7 +9,7 @@ function Proccy() {
   // Decode the source
   const decodedSrc = decodeXor(encodedSrc);
 
-  return <iframe src={decodedSrc} />;
+  return <iframe src={decodedSrc} className="w-full h-screen"/>;
 }
 
 export default Proccy;
