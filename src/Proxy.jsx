@@ -1,21 +1,15 @@
-import ReactDOM from 'react-dom';
+import React from 'react';
 import { decodeXor } from '/public/tools.js';
 
+function Proccy() {
+  // Get the encoded source from the URL query parameter
+  const searchParams = new URLSearchParams(window.location.search);
+  const encodedSrc = searchParams.get('src');
 
-function Proccy()
-{
-    function IframeWithDecodedSource({ encodedSrc }) {
-    const decodedSrc = decodeXor(encodedSrc);
+  // Decode the source
+  const decodedSrc = decodeXor(encodedSrc);
 
   return <iframe src={decodedSrc} />;
 }
 
-const encodedSrc = 'encoded_source_url';
-
-    ReactDOM.createRoot(document.getElementById('root')).render(
-    <>
-        <IframeWithDecodedSource />
-
-    </>
-)}
-export default Proccy
+export default Proccy;
