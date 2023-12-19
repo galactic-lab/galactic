@@ -5,7 +5,6 @@ import App from './App.jsx'
 import Proccy from './Proxy.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import {useEffect} from "react";
-import NavBar from './navbar.jsx'
 
 function Main() {
     useEffect(() => {
