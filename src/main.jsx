@@ -9,7 +9,7 @@ import {useEffect} from "react";
 function Main() {
     useEffect(() => {
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register(`/register.js`, { scope: '/uv/' }).then(
+            navigator.serviceWorker.register(`/register.js`, { scope: '/site/' }).then(
                 () => {
                     console.log('Proccy service worker registered');
                 },
