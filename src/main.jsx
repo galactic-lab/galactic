@@ -22,24 +22,23 @@ function Main() {
             console.error('Service workers are not supported.');
         }
     });
-   return (
-       <>
-    <Routes>
-      <Route path="/" element={<App />}></Route>
-      <Route path="/view" element={<Proccy />}></Route>
-      {/*<Route path="settings" element={<Settings />}></Route>*/}
-    </Routes>
-  </>
-   )
+    return (
+        <>
+            <Routes>
+                <Route path="/" element={<App />}></Route>
+                <Route path="/view" element={<Proccy />}></Route>
+                {/*<Route path="settings" element={<Settings />}></Route>*/}
+            </Routes>
+        </>
+    )
 }
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <>
-    <NavBar />
-    <BrowserRouter>
-    <Main />
-    </BrowserRouter>
+    <>
+        <BrowserRouter>
+            <Main />
+        </BrowserRouter>
 
-  </>
-  )
+    </>
+)

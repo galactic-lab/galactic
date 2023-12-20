@@ -37,7 +37,7 @@ export default function NavBar() {
                     className="Rectangle2 fixed top-5 left-5 right-5 h-32 opacity-75 bg-neutral-900 rounded-2xl flex items-center pr-14 pl-14"/>
                 <ul className="flex justify-around w-full items-center list-none">
                     <li><a href="/"><FontAwesomeIcon icon={faHouse} style={{color: "#ffffff",}}
-                                                             className="fixed w-[35px] h-[38px]"/></a></li>
+                                                     className="fixed w-[35px] h-[38px]"/></a></li>
                     <li><a href="#"><FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{color: "#ffffff",}}
                                                      className="fixed w-[35px] h-[38px]"/></a></li>
                 </ul>
@@ -52,7 +52,7 @@ export default function NavBar() {
     else {
         return (
             <>
-            <head></head>  
+                <head></head>
             </>
         )
     }
