@@ -9,18 +9,16 @@ import {useEffect} from "react";
 function Main() {
     useEffect(() => {
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register(`/register.js`, { scope: '/site/' }).then(
-                () => {
-                    console.log('Proccy service worker registered');
-                },
-                (error) => {
-                    console.error(`Proccy fail: ${error}`);
-                }
-            )
-
-        } else {
-            console.error('Service workers are not supported.');
-        }
+            navigator.serviceWorker
+              .register('/sw.js', {
+                scope: '/site/'
+              })
+              .then(() => {
+                console.log('Service worker registered')
+              })
+          } else {
+            console.error("Service workers are not supported on this device")
+          }
     });
     return (
         <>

@@ -11,7 +11,7 @@ function App() {
         e.preventDefault()
         const address = document.getElementById('address').value
         const encodedSrc = encodeXor(address)
-        navigate('/view?src=' + encodedSrc)
+        navigate(`/view?src=${encodedSrc}`)
     }
     return (
         <>
