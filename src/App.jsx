@@ -1,8 +1,5 @@
 import './index.css';
 import {encodeXor} from "/public/tools.js";
-import NavBar from './navbar.jsx';
-import Proccy from "./Proxy.jsx";
-
 
 
 function App() {
@@ -15,7 +12,6 @@ function App() {
     }
   return (
       <>
-      <NavBar />
       <div className="mt-8 sm:mt-12 lg:mt-16 relative flex justify-center">
         <div id="Glow" className="shadow-glow w-full max-w-xs sm:max-w-sm lg:max-w-md"/>
           <form id="urlForm" onSubmit={handleSearch}>
