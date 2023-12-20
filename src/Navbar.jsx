@@ -23,8 +23,8 @@ export default function NavBar() {
                     <li><a href="/settings"><FontAwesomeIcon icon={faGear} style={{color: "#ffffff",}} className="fixed w-[35px] h-[38px]"/></a></li>
                     <li><a href="#"><FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{color: "#ffffff",}} className="fixed w-[35px] h-[38px]" /></a></li>
                 </ul>
-                <div className="w-[277px] h-[80px">
-                    <div className="fixed w-[277px] top-5 left-5 font-lexend [text-shadow:0px_0px_24.93px_ #ffffff] font-medium text-[#ffffff] text-[64px] tracking-[-0.64px] leading-[normal]">
+                <div className="w-[277px] h-[80px]">
+                    <div className="fixed w-[277px] top-10 mx-auto font-lexend [text-shadow:0px_0px_24.93px_ #ffffff] font-medium text-[#ffffff] text-[64px] tracking-[-0.64px] leading-[normal]">
                         Galactic
                     </div>
                 </div>
