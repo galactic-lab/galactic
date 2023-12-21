@@ -9,7 +9,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                'lexend': ['Lexend']
+                'inter': ['Inter']
         }
     }
     }
