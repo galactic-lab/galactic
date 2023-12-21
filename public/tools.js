@@ -19,15 +19,13 @@ export function decodeXor (input){
             .join('') + (search.length ? '?' + search.join('?') : '')
     )
 }
-export function formatSearch(input) {
-    try {
-        return new URL(input).toString()
-    } catch (e) {}
+export function urlType (input) {
+    let decoded = decodeXor(input)
+    if (decoded.includes('.')) {
+        return encodeXor('https://') + encodeXor(decoded)
+    } else {
+        let encodedSearch = `https://google.com/search?q=${decoded}`
+        return encodeXor(encodedSearch)
 
-    try {
-        const url = new URL(`https://${input}`)
-        if (url.hostname.includes('.')) return url.toString()
-    } catch (e) {}
-
-    return new URL(`https://google.com/search?q=${input}`).toString()
+    }
 }

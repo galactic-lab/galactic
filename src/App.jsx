@@ -1,6 +1,6 @@
 import './index.css';
 import { useNavigate } from "react-router-dom"
-import {encodeXor} from "/public/tools.js";
+import { encodeXor } from "/public/tools.js";
 import NavBar from './navbar.jsx';
 
 
