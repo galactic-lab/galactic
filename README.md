@@ -16,3 +16,5 @@ Run `npm run dev-build` to rebuild and start Galactic in one command.
 * Automatic Dynamic-UV switching
 * Photon implementation - proxy wrapper
 * Cloaking options
+
+## [Discord](https://discord.gg/xsQRx4tjj5)
