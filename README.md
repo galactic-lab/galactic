@@ -14,6 +14,7 @@ Introducing Galactic. A new proxy, built on the Photon wrapper for UV. The proxy
 [![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://railway.app/new/template?template=https://github.com/galactic-lab/galactic)
 [![Deploy to Cyclic](https://binbashbanana.github.io/deploy-buttons/buttons/remade/cyclic.svg)](https://app.cyclic.sh/api/app/deploy/galactic-lab/galactic)
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/galactic-lab/galactic)
+
  Run `npm i`, and `npm run dev` after each update. Run `npm run start` to start the proxy.
 
 ### Developers
