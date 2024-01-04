@@ -1,7 +1,7 @@
 import "./index.css";
 import { useNavigate } from "react-router-dom";
 import { encodeXor } from "/public/tools.js";
-import NavBar from "./navbar.jsx";
+import NavBar from "./Navbar.jsx";
 
 function App() {
   const navigate = useNavigate();
