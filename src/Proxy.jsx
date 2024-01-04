@@ -6,7 +6,7 @@ function Proccy() {
   const src = searchParams.get("src");
   let encodedSrc = urlType(src);
 
-  return <iframe src={`/site/${encodedSrc}`} className="w-full h-screen" />;
+  return <iframe src={`/site/${encodedSrc}`} className="absolute w-screen h-screen top-0 right-0 bottom-0 left-0 border-none p-0" />;
 }
 
 export default Proccy;

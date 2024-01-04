@@ -15,19 +15,14 @@ function App() {
   return (
     <>
       <NavBar />
-      <div className="mt-8 sm:mt-12 lg:mt-16 justify-center">
-        <div
-          id="Glow"
-          className="shadow-glow w-full max-w-xs sm:max-w-sm lg:max-w-md"
-        >
+      <div className="absolute flex-col mt-16">
           <form id="urlForm" onSubmit={handleSearch}>
             <input
               id="address"
               placeholder="Browse the web freely"
-              className="w-full max-w-xs sm:max-w-sm lg:max-w-md bg-[#181818] text-base text-[rgba(235,_235,_245,_0.6)] py-3 px-4 rounded-lg outline-none"
+              className="w-200 h-20 max-w-xs bg-[#181818] text-white text-md py-3 px-4 rounded-lg outline-none"
             />
           </form>
-        </div>
       </div>
     </>
   );

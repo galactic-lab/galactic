@@ -22,9 +22,9 @@ export default function NavBar() {
   if (page === "home") {
     return (
       <>
-        <div className="fixed top-5 left-5 right-5 h-28 bg-neutral-900 rounded-2xl flex items-center pr-14 pl-14">
-          <ul className="relative flex-col w-full items-center list-none">
-            <li>
+        <div className="fixed top-5 left-5 right-5 h-20 bg-neutral-900 rounded-2xl flex items-center pr-14 pl-14 z-auto">
+          <ul className="fixed flex-col top-10 w-full items-center list-none">
+            <li className="space-x-4">
               <a href="/settings">
                 <FontAwesomeIcon
                   icon={faGear}
@@ -43,9 +43,9 @@ export default function NavBar() {
               </a>
             </li>
           </ul>
-          <div className="flex-col flex-row top-10 mx-auto font-inter font-medium text-white text-6xl">
+          <p className="flex-col navbar-center top-10 mx-auto font-inter font-medium text-white text-5xl">
             Galactic
-          </div>
+          </p>
         </div>
       </>
     );
